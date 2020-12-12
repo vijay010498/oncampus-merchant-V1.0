@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Otp to complete the delivery!"
+        android:fontFamily="@font/open_sans_bold"
+        android:textStyle="italic"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:padding="5dp" />
+    <com.chaos.view.PinView
+        android:id="@+id/deliveryOtp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/behanceColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        android:gravity="center"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        android:layout_margin="10dp"
+        app:itemWidth="48dp"
+        app:lineColor="@color/instagramColor"
+        app:lineWidth="2dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:viewType="rectangle" />
+
+
+</LinearLayout>

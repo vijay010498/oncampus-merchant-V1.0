@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.svijayr007.oncampuspartner.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/normal_loading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/oncampus_logo_without_bg" />
+                    <ImageView
+                        android:id="@+id/res_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/logo"
+                        android:src="@drawable/cutlery_image"
+                        app:tint="@android:color/holo_green_light" />
+                    <TextView
+                        android:id="@+id/loading_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@id/res_image"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="  Loading....."/>
+                </RelativeLayout>
+
+                <LinearLayout
+                android:id="@+id/verification_pending_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/oncampus_logo_without_bg"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you for your Patience . Your Registration is completed. Our onCampus executive will contact your shortly "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans_bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.00dp"
+                    android:layout_marginBottom="3.00dp"
+                    android:layout_marginStart="10.00dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="About US"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14.00sp" />
+
+
+                <TextView
+                    android:id="@+id/mailUsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.00dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="5.00dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="Mail us"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="15.00dp"
+                    android:background="@color/divider_line_color" />
+                <TextView
+                    android:id="@+id/callUsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.00dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="5.00dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="Call us"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="15.00dp"
+                    android:background="@color/divider_line_color" />
+                <TextView
+                    android:id="@+id/websiteTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.00dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="5.00dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="Visit Our Website"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10.00dp"
+                    android:background="@color/divider_line_color"
+                    android:layout_marginEnd="15.00dp"/>
+
+                <TextView
+                    android:id="@+id/privacyTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.00dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="5.00dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="Privacy"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="15.00dp"
+                    android:background="@color/divider_line_color" />
+                <TextView
+                    android:id="@+id/faqTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.00dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="5.00dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="FAQ"
+                    android:textColor="@color/black"
+                    android:textSize="13.00sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10.00dp"
+                    android:layout_marginEnd="15.00dp"
+                    android:background="@color/divider_line_color" />
+                    <TextView
+                        android:id="@+id/logoutTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.00dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="10.00dp"
+                        android:layout_marginEnd="5.00dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:singleLine="true"
+                        android:text="Logout"
+                        android:textColor="@color/black"
+                        android:textSize="13.00sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10.00dp"
+                        android:layout_marginEnd="15.00dp"
+                        android:background="@color/divider_line_color" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
